@@ -35,5 +35,6 @@
   #history{
     margin-left: 0;
     width: 50%;
+    position: absolute;
   }
 }
