@@ -3,7 +3,7 @@
 A simple calculator that runs arithmetic functions and stores the last 5 results to be seen in the history section. Website available via this [link].
 &nbsp;
 ### How to run:
-1. Install node.js and Mathjs.
+1. Install Node.js, React and Mathjs.
 1. Use `npm start`
 &nbsp;
 
