@@ -1,38 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  border: solid;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#calculator{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 400px;
+  width: 350px;
+  border-radius: 58px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+  #display-wrapper{
+    font-family: 'Orbitron', sans-serif;
+    height: 120px;
+    width: 50px;
+    border-radius: 50px 50px 0 0;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    border: solid 3px;
+    border-bottom: 0px;
+    background: #A5A58D;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  #button-wrapper{
+    display: flex;
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  #number-pad{
+    width: 75%;
+    height: 100%;
   }
+
+    .num-button{
+      width: calc(100%/3);
+      height: 25%;
+      outline: none;
+      font-size: 30px;
+      border: solid 1px;
+      background: #DDBEA9;
+    }
+
+    #zero{
+      width: 100%;
+      border-radius: 0 0 0 55px;
+      border-left: solid 3px;
+      border-bottom: solid 3px;
+      box-shadow: 18px 13px 13px -6px;
+    }
+    #one, #four, #seven{
+      border-left: solid 3px;
+    }
+  #operator-pad{
+    width: 25%;
+    height: 100%;
+  }
+
+    .op-button{
+      width: 100%;
+      height: calc(75%/7);
+      font-size: 28px;
+      outline: none;
+      border: solid 1px;
+      border-right: solid 3px;
+      background: #FFF1E6;
+    }
+    #equals{
+      height: 25%;
+      border-radius: 0 0 55px 0;
+      border-bottom: solid 3px;
+      background: #586994;
+      box-shadow: 0 13px 13px -6px;
+    }
+    #clear{
+      background: #B3001B;
+    }
+    
+@media only screen and (max-width: 1000px){
+  #heading {
+    font-size: 25px;
+  }
+  .container{
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 700px){
+  .App{
+    flex-direction: column;
+  }
+    #calculator{
+      width: 300px;
+      height: 400px;
+    }
 }

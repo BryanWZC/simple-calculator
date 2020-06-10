@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+#history{
+    display: flex;
+    flex-direction: column;
+    top: calc(50% + 400px/2 + 50px);
+    width: 25%;
+    margin-left: 5%;
+}
+
+.container{
+  border: solid;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background: #A5A58D;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 13px;
+}
+
+  #value0{
+      animation-name: slide;
+      animation-duration: 0.5s;
+  }
+
+  #heading{
+    text-align: left;
+  }
+
+@keyframes slide {
+  from{margin-left:100%;}
+  to {margin-left:0;}
+}
+
+@media only screen and (max-width: 700px){
+  #history{
+    margin-left: 0;
+    width: 50%;
+  }
+}
